@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Essy's Crochet Shop — Handmade with love. Browse our cozy hats, bags, plushies and more." />
+  <title>Essy's Crochet Shop | Handmade with Love</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Favicon emoji shortcut -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧶</text></svg>" />
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">Essy's Crochet</a>
+
+    <!-- Hamburger icon for mobile -->
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="hero-eyebrow">✦ Handcrafted with love &amp; yarn ✦</span>
+
+      <h1>
+        Cozy things,<br />
+        <em>made by hand.</em>
+      </h1>
+
+      <p class="hero-tagline">
+        Each piece from Essy's Crochet Shop is lovingly stitched just for you —
+        warm, unique, and made to last a lifetime.
+      </p>
+
+      <div class="hero-cta">
+        <!-- The id="heroShopBtn" is used by script.js for the welcome click animation -->
+        <a href="gallery.html" id="heroShopBtn" class="btn btn-primary">
+          🧶 Shop the Collection
+        </a>
+        <a href="contact.html" class="btn btn-outline">Custom Orders</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT / INTRO ==================== -->
+  <section class="about-section">
+    <div class="about-inner">
+
+      <!-- Placeholder image using a crochet-themed gradient + emoji -->
+      <div class="about-img-wrap reveal">
+        <!-- Using a placeholder image service with a warm tone -->
+        <img
+          src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80"
+          alt="Essy crocheting colourful yarn"
+          loading="lazy"
+        />
+        <!-- Decorative badge overlaid on the image -->
+        <div class="about-badge">
+          <strong>5+</strong>
+          years of<br />crafting
+        </div>
+      </div>
+
+      <!-- About text -->
+      <div class="about-text reveal">
+        <h2>Hi, I'm Essy —<br /><em>your crochet bestie.</em></h2>
+        <p>
+          What started as a late-night hobby with a single hook and a ball of
+          dusty-rose yarn has grown into a full collection of handmade treasures.
+          I pour time, care, and a whole lot of love into every stitch.
+        </p>
+        <p>
+          All items are made to order, so you can customise colours to perfectly
+          match your style. No two pieces are identical — just like you!
+        </p>
+
+        <!-- Key perks list -->
+        <ul class="about-perks">
+          <li class="perk">
+            <span class="perk-icon">🌿</span>
+            <span>Ethically sourced, soft-on-skin yarns</span>
+          </li>
+          <li class="perk">
+            <span class="perk-icon">🎨</span>
+            <span>Custom colour &amp; size requests welcome</span>
+          </li>
+          <li class="perk">
+            <span class="perk-icon">📦</span>
+            <span>Beautifully packaged — perfect as gifts</span>
+          </li>
+          <li class="perk">
+            <span class="perk-icon">💌</span>
+            <span>Handwritten note included with every order</span>
+          </li>
+        </ul>
+
+        <a href="contact.html" class="btn btn-primary" style="margin-top:1rem;">
+          Get in Touch
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== FEATURED PRODUCTS ==================== -->
+  <section class="featured-section">
+
+    <span class="section-label">Our Bestsellers</span>
+    <h2 class="section-title">Featured Crochet Items</h2>
+    <div class="divider"></div>
+    <p class="section-sub">
+      A little peek at what's flying off the hooks this season.
+      Every item is made fresh, with care.
+    </p>
+
+    <!-- Product cards grid -->
+    <div class="products-grid">
+
+      <!-- Card 1 — Beanie -->
+      <div class="product-card reveal">
+        <div class="card-img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?w=500&q=80"
+            alt="Cozy Autumn Beanie"
+            loading="lazy"
+          />
+          <span class="card-tag">Bestseller</span>
+        </div>
+        <div class="card-body">
+          <h3>Cozy Autumn Beanie</h3>
+          <p>A snug, chunky-knit style beanie in warm terracotta tones. Perfect for chilly mornings and golden evenings.</p>
+          <div class="card-footer">
+            <span class="price">KSh 850</span>
+            <a href="contact.html" class="btn btn-outline" style="padding:0.5rem 1.1rem;font-size:0.8rem;">
+              Order Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 — Mini Bag -->
+      <div class="product-card reveal">
+        <div class="card-img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=500&q=80"
+            alt="Mini Market Bag"
+            loading="lazy"
+          />
+          <span class="card-tag new">New</span>
+        </div>
+        <div class="card-body">
+          <h3>Mini Crochet Market Bag</h3>
+          <p>A boho-chic mini bag in natural cotton. Roomy enough for your essentials, cute enough to carry everywhere.</p>
+          <div class="card-footer">
+            <span class="price">KSh 1,200</span>
+            <a href="contact.html" class="btn btn-outline" style="padding:0.5rem 1.1rem;font-size:0.8rem;">
+              Order Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 — Plushie -->
+      <div class="product-card reveal">
+        <div class="card-img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=500&q=80"
+            alt="Amigurumi Bear Plushie"
+            loading="lazy"
+          />
+          <span class="card-tag">Popular</span>
+        </div>
+        <div class="card-body">
+          <h3>Amigurumi Bear Plushie</h3>
+          <p>The sweetest little bear, crocheted in soft pastel yarn. Makes an adorable gift for babies and adults alike.</p>
+          <div class="card-footer">
+            <span class="price">KSh 950</span>
+            <a href="contact.html" class="btn btn-outline" style="padding:0.5rem 1.1rem;font-size:0.8rem;">
+              Order Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 — Scarf -->
+      <div class="product-card reveal">
+        <div class="card-img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?w=500&q=80"
+            alt="Lacy Wrap Scarf"
+            loading="lazy"
+          />
+          <span class="card-tag new">New</span>
+        </div>
+        <div class="card-body">
+          <h3>Lacy Wrap Scarf</h3>
+          <p>A delicate, airy scarf with a beautiful lace stitch pattern. Available in sage, cream, and blush pink.</p>
+          <div class="card-footer">
+            <span class="price">KSh 1,050</span>
+            <a href="contact.html" class="btn btn-outline" style="padding:0.5rem 1.1rem;font-size:0.8rem;">
+              Order Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- View all link -->
+    <div style="text-align:center;margin-top:2.5rem;">
+      <a href="gallery.html" class="btn btn-sage">View Full Gallery →</a>
+    </div>
+
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <!-- Brand blurb -->
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">Essy's Crochet</a>
+        <p>Handmade crochet treasures, stitched with love in Nairobi, Kenya. Custom orders always welcome.</p>
+      </div>
+
+      <!-- Quick links -->
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Categories -->
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="gallery.html">Hats &amp; Beanies</a></li>
+          <li><a href="gallery.html">Bags</a></li>
+          <li><a href="gallery.html">Plushies</a></li>
+          <li><a href="gallery.html">Scarves</a></li>
+          <li><a href="gallery.html">Home Décor</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact snippet -->
+      <div class="footer-col">
+        <h4>Say Hello</h4>
+        <ul>
+          <li><a href="mailto:hello@essyscrochet.co.ke">hello@essyscrochet.co.ke</a></li>
+          <li><a href="tel:+254700000000">+254 700 000 000</a></li>
+          <li><a href="contact.html">Custom Order Form</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Essy's Crochet Shop. Made with <span>🧶</span> in Nairobi, Kenya.</p>
+    </div>
+  </footer>
+
+  <!-- Link the JavaScript file -->
+  <script src="script.js"></script>
+
+</body>
+</html>

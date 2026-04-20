@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Essy's Crochet Blog — tutorials, tips, and crochet inspiration for every skill level." />
+  <title>Blog | Essy's Crochet Shop</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧶</text></svg>" />
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">Essy's Crochet</a>
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ==================== BLOG HERO ==================== -->
+  <div class="blog-hero">
+    <span class="section-label">Tips, Tutorials &amp; Musings</span>
+    <h1 class="section-title">The Crochet Corner</h1>
+    <div class="divider"></div>
+    <p class="section-sub">
+      From beginner guides to mindful stitching — pull up a chair, make a cup of tea,
+      and let's talk crochet.
+    </p>
+  </div>
+
+  <!-- ==================== BLOG POSTS GRID ==================== -->
+  <div class="blog-grid" style="padding-top:3rem;">
+
+    <!-- Post 1 — Tutorial -->
+    <article class="blog-card reveal">
+      <div class="blog-card-img-wrap">
+        <img
+          class="blog-card-img"
+          src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80"
+          alt="How to crochet a beanie"
+          loading="lazy"
+        />
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-meta">
+          <span class="blog-cat">Tutorial</span>
+          <span class="blog-date">March 12, 2025</span>
+        </div>
+        <h3>How to Crochet a Cozy Winter Beanie</h3>
+        <p>
+          Ready to make your first hat? This step-by-step beginner tutorial walks you through
+          everything — from choosing the right yarn weight to adding a chunky pom-pom on top.
+          No experience necessary, just a hook and some enthusiasm!
+        </p>
+        <div class="blog-card-footer">
+          <span class="read-time">⏱ 6 min read</span>
+          <!-- data-post links to the blog post content in script.js -->
+          <button class="btn btn-outline read-more-btn" data-post="post-1"
+            style="padding:0.5rem 1.1rem;font-size:0.8rem;">
+            Read More →
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Post 2 — Guide -->
+    <article class="blog-card reveal">
+      <div class="blog-card-img-wrap">
+        <img
+          class="blog-card-img"
+          src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80"
+          alt="Choosing crochet yarn"
+          loading="lazy"
+        />
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-meta">
+          <span class="blog-cat">Beginner Guide</span>
+          <span class="blog-date">February 28, 2025</span>
+        </div>
+        <h3>Beginner's Guide to Choosing Crochet Yarn</h3>
+        <p>
+          Acrylic, cotton, wool, or blend? Worsted, bulky, or DK? The yarn aisle can feel
+          overwhelming at first. In this post, I break down everything you need to know to
+          pick the perfect yarn for your first project.
+        </p>
+        <div class="blog-card-footer">
+          <span class="read-time">⏱ 5 min read</span>
+          <button class="btn btn-outline read-more-btn" data-post="post-2"
+            style="padding:0.5rem 1.1rem;font-size:0.8rem;">
+            Read More →
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Post 3 — Lifestyle -->
+    <article class="blog-card reveal">
+      <div class="blog-card-img-wrap">
+        <img
+          class="blog-card-img"
+          src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=600&q=80"
+          alt="Crochet as mindfulness"
+          loading="lazy"
+        />
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-meta">
+          <span class="blog-cat">Lifestyle</span>
+          <span class="blog-date">January 15, 2025</span>
+        </div>
+        <h3>Crochet Self-Care: Making It a Mindful Practice</h3>
+        <p>
+          Did you know that crocheting can reduce anxiety, improve focus, and promote feelings
+          of calm? In this heartfelt post, I explore how to turn your crochet sessions into
+          a nourishing, screen-free ritual for mental wellbeing.
+        </p>
+        <div class="blog-card-footer">
+          <span class="read-time">⏱ 4 min read</span>
+          <button class="btn btn-outline read-more-btn" data-post="post-3"
+            style="padding:0.5rem 1.1rem;font-size:0.8rem;">
+            Read More →
+          </button>
+        </div>
+      </div>
+    </article>
+
+  </div>
+  <!-- End blog-grid -->
+
+  <!-- Newsletter Banner -->
+  <section style="background:linear-gradient(135deg,#fde8d8 0%,#f0e8d4 100%);text-align:center;padding:4rem 2rem;">
+    <span class="section-label">Never miss a post</span>
+    <h2 class="section-title" style="margin-bottom:0.6rem;">Join the Crochet Community</h2>
+    <div class="divider"></div>
+    <p class="section-sub">
+      Get new tutorials, seasonal patterns, and exclusive discounts delivered to your inbox
+      every few weeks. No spam, just yarn-love.
+    </p>
+    <a href="contact.html" class="btn btn-primary" style="margin-top:0.5rem;">
+      📬 Get in Touch
+    </a>
+  </section>
+
+  <!-- ==================== BLOG MODAL ==================== -->
+  <!-- This modal is opened by script.js when "Read More" is clicked -->
+  <div class="modal-overlay" id="blogModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose" aria-label="Close post">&times;</button>
+      <h2 id="modalTitle">Post Title</h2>
+      <div class="divider" style="margin:0.5rem 0 0.8rem;"></div>
+      <!-- Content injected by script.js -->
+      <div class="modal-body" id="modalContent"></div>
+      <div style="text-align:center;margin-top:2rem;">
+        <a href="contact.html" class="btn btn-primary">Order a Custom Piece →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">Essy's Crochet</a>
+        <p>Handmade crochet treasures, stitched with love in Nairobi, Kenya.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Recent Posts</h4>
+        <ul>
+          <li><a href="#">How to Crochet a Beanie</a></li>
+          <li><a href="#">Choosing Your First Yarn</a></li>
+          <li><a href="#">Crochet as Self-Care</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Say Hello</h4>
+        <ul>
+          <li><a href="mailto:hello@essyscrochet.co.ke">hello@essyscrochet.co.ke</a></li>
+          <li><a href="contact.html">Custom Order Form</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Essy's Crochet Shop. Made with <span>🧶</span> in Nairobi, Kenya.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

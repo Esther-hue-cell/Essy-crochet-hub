@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Essy's Crochet Shop — place a custom order or ask a question." />
+  <title>Contact | Essy's Crochet Shop</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧶</text></svg>" />
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">Essy's Crochet</a>
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ==================== CONTACT HERO ==================== -->
+  <div class="contact-hero">
+    <span class="section-label">Let's Chat!</span>
+    <h1 class="section-title">Get in Touch</h1>
+    <div class="divider"></div>
+    <p class="section-sub">
+      Have a custom order in mind, a question about a product, or just want to say hello?
+      I'd love to hear from you — I reply within 24 hours.
+    </p>
+  </div>
+
+  <!-- ==================== CONTACT CONTENT ==================== -->
+  <div class="contact-wrapper">
+
+    <!-- Left: Contact info -->
+    <div class="contact-info reveal">
+      <h3>Reach Out Anytime</h3>
+      <p>
+        Whether you're looking for a personalised gift, a bulk order, or just want to know
+        more about my process — every message is welcome. Let's make something beautiful together!
+      </p>
+
+      <div class="contact-details">
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📧</div>
+          <div class="contact-detail-text">
+            <strong>Email</strong>
+            <span>hello@essyscrochet.co.ke</span>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📞</div>
+          <div class="contact-detail-text">
+            <strong>Phone / WhatsApp</strong>
+            <span>+254 700 000 000</span>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📍</div>
+          <div class="contact-detail-text">
+            <strong>Based In</strong>
+            <span>Nairobi, Kenya</span>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">🕰️</div>
+          <div class="contact-detail-text">
+            <strong>Response Time</strong>
+            <span>Within 24 hours on weekdays</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social media links -->
+      <p style="font-size:0.85rem;font-weight:700;letter-spacing:0.5px;text-transform:uppercase;color:var(--text-light);margin-bottom:0.8rem;">
+        Follow Along
+      </p>
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="Instagram">📸</a>
+        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+        <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+        <a href="#" class="social-link" aria-label="Pinterest">📌</a>
+      </div>
+    </div>
+
+    <!-- Right: Contact form (posts to contact.php) -->
+    <div class="contact-form-card reveal">
+      <h3>🧶 Send a Message</h3>
+
+      <!--
+        FORM ACTION: This form submits to contact.php for server-side processing.
+        The PHP file will validate the data and send an email or store it.
+        method="POST" is used so form data is not exposed in the URL.
+      -->
+      <form id="contactForm" action="contact.php" method="POST" novalidate>
+
+        <!-- Name & Email in a two-column row -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name *</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="e.g. Amara Odhiambo"
+              required
+              autocomplete="name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              required
+              autocomplete="email"
+            />
+          </div>
+        </div>
+
+        <!-- Phone (optional) -->
+        <div class="form-group">
+          <label for="phone">Phone / WhatsApp (optional)</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="+254 7XX XXX XXX"
+            autocomplete="tel"
+          />
+        </div>
+
+        <!-- Subject / Order type dropdown -->
+        <div class="form-group">
+          <label for="subject">What can I help you with?</label>
+          <select id="subject" name="subject">
+            <option value="general">General Enquiry</option>
+            <option value="order">Place a Custom Order</option>
+            <option value="wholesale">Wholesale / Bulk Order</option>
+            <option value="collab">Collaboration / Feature</option>
+            <option value="other">Something Else</option>
+          </select>
+        </div>
+
+        <!-- Message textarea -->
+        <div class="form-group">
+          <label for="message">Your Message *</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Tell me about your order — desired item, colours, size, delivery date, budget, etc."
+            required
+            rows="5"
+          ></textarea>
+        </div>
+
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary form-submit">
+          ✉️ Send Message
+        </button>
+
+        <!-- Feedback message — shown by JS (validation) or PHP (submission result) -->
+        <div class="form-message" id="formMessage"></div>
+
+      </form>
+    </div>
+
+  </div>
+  <!-- End contact-wrapper -->
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">Essy's Crochet</a>
+        <p>Handmade crochet treasures, stitched with love in Nairobi, Kenya.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="gallery.html">Hats &amp; Beanies</a></li>
+          <li><a href="gallery.html">Bags</a></li>
+          <li><a href="gallery.html">Plushies</a></li>
+          <li><a href="gallery.html">Scarves</a></li>
+          <li><a href="gallery.html">Home Décor</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Say Hello</h4>
+        <ul>
+          <li><a href="mailto:hello@essyscrochet.co.ke">hello@essyscrochet.co.ke</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Essy's Crochet Shop. Made with <span>🧶</span> in Nairobi, Kenya.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
